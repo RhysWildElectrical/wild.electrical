@@ -20,14 +20,14 @@ from your side. Everything below is real, verified steps — nothing invented.
    those). Note the repo URL, e.g. `https://github.com/your-org/wild-electrical.git`.
 2. On a machine with `git` installed, from this project's folder:
 
-   ```bash
+```bash
    git init
    git add .
    git commit -m "Initial site build"
    git branch -M main
    git remote add origin https://github.com/your-org/wild-electrical.git
    git push -u origin main
-   ```
+```
 
    (If a `.git` folder already exists because I initialized one, just run
    the `remote add` and `push` steps.)
@@ -84,35 +84,70 @@ relying on it, terms can change.
 
 ## 5. Content that still needs real details
 
-I didn't invent any business facts — these are placeholders that need your
-actual details before launch (search the codebase for `PLACEHOLDER` to find
-them all, mainly in `src/lib/site.ts`):
+Filled in so far (as of 2026-08-25): phone, ABN, electrical licence number
+(PGE228784), operating hours, service area, and a general "Adelaide Hills"
+address (intentionally not exact, per your instruction). Still outstanding —
+search the codebase for `PLACEHOLDER` to double-check:
 
-- Phone number
-- Business address (or confirm there isn't a public one)
-- ABN
-- Electrical licence number
-- Operating hours
-- Service area description
 - About page: real company story/history
 - Projects page: real project photos + short descriptions (currently empty
   placeholder slots)
 - Any testimonials — only add real, verifiable ones
 
-## 6. Restart Hard font — licence reminder
+## 6. Restart Hard font — licence status
 
 The "WILD" heading font (Restart Hard, from Superior Type / superiortype.com)
-in this build is a **trial version** — confirmed by the font files' own
-internal metadata. You said the business owner will purchase a commercial
-licence before this goes live. This is the reminder to actually do that —
-check superiortype.com for current pricing and licence terms before the
-site goes live on wildelectrical.au.
+is now licensed for the **Bold (700)** weight only — confirmed 2026-08-25 via
+a Superior Type Webfont EULA (2026, v1.0) and the font file's own internal
+metadata, which no longer carries any "Trial" marking.
+
+Note: the site's headings previously used the **ExtraBold (800)** and
+**Black (900)** cuts of Restart Hard, which looked heavier/punchier. Those
+were trial files and have been removed from the project — headings now
+render in the licensed Bold weight instead, which will look a bit lighter
+than earlier previews. If you want that heavier look back, ExtraBold and/or
+Black would need to be separately licensed from Superior Type and added
+back into `src/fonts.ts`.
 
 ## 7. Before going live — quick checklist
 
-- [ ] All `PLACEHOLDER` content replaced with real details
-- [ ] Restart Hard commercial licence purchased
+- [ ] Remaining `PLACEHOLDER` content replaced with real details (About page
+      story, project photos, testimonials — see section 5)
+- [x] Restart Hard commercial licence purchased — Bold weight only, 2026-08-25
+      (see section 6 — ExtraBold/Black still unlicensed if you want them back)
 - [ ] Resend domain verified, `RESEND_API_KEY` set in Vercel, test enquiry
       sent and received at rhys@wildelectrical.au
 - [ ] wildelectrical.au DNS pointed at Vercel and resolving
 - [ ] Real project photos added
+
+Commit directly to main.
+
+5. Replace README.md — one small line change, same approach:
+
+markdown
+# Wild Electrical Website
+
+Next.js site for Wild Electrical (wildelectrical.au). Covers residential,
+commercial, industrial and solar electrical work, new homes, additions &
+renovations, utility-scale solar farm maintenance, and instrumentation.
+
+See **SETUP.md** for the full checklist to get this from code to a live,
+working site (GitHub, Vercel, the enquiry form's email delivery, DNS, and
+the content that still needs to be filled in).
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Open http://localhost:3000.
+
+## Stack
+
+- Next.js (App Router) + TypeScript + Tailwind CSS v4
+- Fonts: Barlow (SIL OFL, free) for body text, Restart Hard (Superior Type,
+  **licensed for the Bold weight — see SETUP.md**) for headings
+- Enquiry form: Next.js API route (`src/app/api/enquiry/route.ts`) sending via
+  the Resend API — needs `RESEND_API_KEY` set as an environment
