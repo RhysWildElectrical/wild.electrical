@@ -14,14 +14,17 @@ export const barlow = localFont({
 });
 
 // Restart Hard — Superior Type s.r.o. (superiortype.com).
-// NOTE: the files bundled here are TRIAL versions (confirmed via internal font
-// metadata). A commercial licence must be purchased from Superior Type before
-// this site goes live on the production domain. Used for headings/display text.
+// Bold (weight 700) is licensed — confirmed via a Superior Type Webfont EULA
+// (2026, v1.0) and the file's own internal metadata, which no longer carries
+// any "Trial" marking. Used for headings/display text.
+//
+// NOTE: the site's headings previously used the ExtraBold (800) and Black
+// (900) cuts, but only the Bold weight has been licensed so far — those two
+// trial files have been removed from the project rather than left in
+// unlicensed. If ExtraBold/Black get licensed later, add them back here as
+// additional `src` entries at weight 800/900.
 export const restartHard = localFont({
-  src: [
-    { path: "./fonts/RestartHard-ExtraBold.ttf", weight: "800", style: "normal" },
-    { path: "./fonts/RestartHard-Black.ttf", weight: "900", style: "normal" },
-  ],
+  src: [{ path: "./fonts/RestartHard-Bold.woff2", weight: "700", style: "normal" }],
   variable: "--font-restart-hard",
   display: "swap",
 });
