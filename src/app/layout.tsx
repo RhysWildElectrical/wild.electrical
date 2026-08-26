@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Wild Electrical | Residential, Commercial, Industrial & Solar Electricians",
   description:
-    "Wild Electrical — licensed electricians covering residential, commercial, industrial and solar work, new homes, renovations, and utility-scale solar farm maintenance.",
+    "Wild Electrical: licensed electricians covering residential, commercial, industrial and solar work, new homes, renovations, and utility-scale solar farm maintenance.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
