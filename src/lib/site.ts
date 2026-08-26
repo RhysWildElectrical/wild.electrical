@@ -10,7 +10,7 @@ export const site = {
   serviceArea: "South Australia",
   address: "Adelaide Hills",
   abn: "98 749 910 248",
-  licence: "PGE228784",
+  licence: "PLACEHOLDER: add electrical licence number",
   hours: "24/7",
   social: {
     facebook: "",
@@ -38,35 +38,35 @@ export const services: Service[] = [
     slug: "residential",
     title: "Residential",
     summary:
-      "General electrical work for homes — from repairs and switchboard upgrades to full rewires.",
+      "All electrical work for homes, from repairs and switchboard upgrades to full rewires.",
     bullets: [
-      "Switchboard upgrades & safety switches",
-      "Lighting, power points & wiring repairs",
-      "Fault finding & diagnostics",
-      "Smoke alarm installation & compliance",
+      "Switchboard upgrades and inspections",
+      "Lighting, power points and switches",
+      "Fault finding and rectification",
+      "Smoke alarm installation and testing",
     ],
   },
   {
     slug: "new-homes",
     title: "New Homes",
     summary:
-      "Electrical fit-out for new home builds, working alongside builders from first fix to handover.",
+      "Electrical first and second fix for new homes, working alongside builders from first fix to handover.",
     bullets: [
-      "Rough-in & fit-off for new builds",
+      "First and second fix of new builds",
       "Coordination with builders and other trades",
-      "Data, TV & networking pre-wiring",
-      "Compliance certification",
+      "SAPN power connections and new services (undergrounds)",
+      "Certificates of compliance",
     ],
   },
   {
     slug: "additions-renovations",
     title: "Additions & Renovations",
     summary:
-      "Electrical work for extensions, renovations and additions — matched to what's already there.",
+      "Electrical work for extensions, additions and renovations, working with you.",
     bullets: [
-      "Extension & renovation wiring",
-      "Kitchen & bathroom electrical upgrades",
-      "Integrating new circuits with existing switchboards",
+      "Extensions and additional wiring",
+      "Kitchen and bathroom electrical upgrades",
+      "Integrating new circuits with your existing home",
       "Minor and major additions",
     ],
   },
@@ -74,12 +74,12 @@ export const services: Service[] = [
     slug: "commercial",
     title: "Commercial",
     summary:
-      "Electrical installation and maintenance for offices, retail and commercial fit-outs.",
+      "Electrical installation and maintenance for offices, retail, commercial and cafes.",
     bullets: [
-      "Office & retail fit-outs",
-      "Switchboard & distribution upgrades",
-      "Emergency & exit lighting",
-      "Scheduled maintenance & compliance testing",
+      "Office and retail install and maintenance",
+      "Switchboard and distribution upgrades",
+      "Emergency and exit lighting",
+      "Scheduled maintenance and compliance testing/verification",
     ],
   },
   {
@@ -88,46 +88,45 @@ export const services: Service[] = [
     summary:
       "Industrial electrical installation, maintenance and fault finding for plant and facilities.",
     bullets: [
-      "Plant & machinery electrical work",
-      "Motor control & switchgear",
+      "Plant and machinery electrical work",
+      "Motor controls and switchgear",
       "Preventative maintenance programs",
-      "Breakdown fault finding & repair",
+      "Breakdown fault finding and repair",
     ],
   },
   {
     slug: "instrumentation",
     title: "Instrumentation",
     summary:
-      "Installation, calibration and troubleshooting of process instrumentation and control systems.",
+      "Installation and maintenance of process instrumentation including weather station sensors.",
     bullets: [
-      "Sensor & transmitter installation",
-      "Loop checking & calibration",
-      "Control panel wiring",
-      "Fault diagnosis on instrumentation systems",
+      "Sensor installations",
+      "Weather station installation and fault finding",
+      "Control wiring",
+      "Fault finding",
     ],
   },
   {
     slug: "solar",
     title: "Solar",
     summary:
-      "Solar electrical work for homes and businesses, from new installs to servicing.",
+      "Solar electrical work for homes and businesses, from new installations to servicing.",
     bullets: [
-      "Residential & commercial solar installation",
-      "Battery storage integration",
-      "System servicing & fault finding",
-      "Performance & compliance checks",
+      "Residential solar installations",
+      "System servicing and fault finding",
+      "Performance and compliance verification",
     ],
   },
   {
     slug: "utility-scale-solar",
     title: "Solar Farm & Utility-Scale",
     summary:
-      "Maintenance and fault finding for large-scale solar farms and utility-scale installations.",
+      "Maintenance and fault finding for utility scale solar farm installations.",
     bullets: [
       "Scheduled maintenance programs",
-      "Fault finding across large-scale arrays",
-      "Inverter & switchgear servicing",
+      "Fault finding across large arrays",
       "Utility-scale electrical support",
+      "Weather station installation and maintenance",
     ],
   },
 ];
