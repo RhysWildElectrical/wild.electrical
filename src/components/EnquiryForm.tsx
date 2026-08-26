@@ -56,7 +56,7 @@ export default function EnquiryForm({ compact = false }: { compact?: boolean }) 
   if (status === "success") {
     return (
       <div className="rounded-2xl border-2 border-wild-sky bg-wild-sky/10 p-6 text-center">
-        <p className="font-display text-xl text-wild-purple">Thanks — got it!</p>
+        <p className="font-display text-xl text-wild-purple">Thanks, got it!</p>
         <p className="mt-2 text-sm text-wild-ink/80">
           Your enquiry has been sent. We&apos;ll be in touch shortly.
         </p>
