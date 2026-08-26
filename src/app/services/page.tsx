@@ -16,9 +16,9 @@ export default function ServicesPage() {
         <Container>
           <h1 className="font-display text-4xl sm:text-5xl">Services</h1>
           <p className="mt-4 max-w-2xl text-white/80">
-            Electrical work across every scale — residential, commercial,
-            industrial and solar, including large-scale maintenance and
-            instrumentation.
+            Electrical work across every scale: residential, commercial,
+            industrial, solar and air conditioning, including utility-scale
+            maintenance and instrumentation.
           </p>
         </Container>
       </section>
@@ -38,7 +38,7 @@ export default function ServicesPage() {
           </div>
 
           <div className="mt-12 space-y-16">
-            {services.map((s, i) => (
+            {services.map((s) => (
               <div
                 key={s.slug}
                 id={s.slug}
@@ -46,10 +46,7 @@ export default function ServicesPage() {
               >
                 <div className="grid gap-6 lg:grid-cols-3">
                   <div>
-                    <span className="font-display text-sm text-wild-pink">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <h2 className="mt-1 font-display text-2xl text-wild-purple sm:text-3xl">
+                    <h2 className="font-display text-2xl text-wild-purple sm:text-3xl">
                       {s.title}
                     </h2>
                     <p className="mt-3 text-wild-ink/75">{s.summary}</p>
@@ -72,7 +69,7 @@ export default function ServicesPage() {
 
           <div className="mt-16 rounded-2xl bg-wild-fog p-8 text-center">
             <h2 className="font-display text-2xl text-wild-purple">
-              Not sure which service you need?
+              How can we help?
             </h2>
             <p className="mt-2 text-wild-ink/75">
               Send us the details and we&apos;ll point you in the right direction.
