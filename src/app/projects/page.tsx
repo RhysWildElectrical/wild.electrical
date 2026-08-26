@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/Container";
 
@@ -7,7 +8,26 @@ export const metadata: Metadata = {
   description: "A look at recent Wild Electrical projects.",
 };
 
-const placeholderSlots = Array.from({ length: 6 }, (_, i) => i + 1);
+const projects = [
+  {
+    src: "/projects/project-1.jpg",
+    alt: "Kitchen renovation electrical fit-out, character home",
+    blurb:
+      "Electrical fit-out including linear LED strip lighting, pendant drops over the island, and power points built into the benchtop.",
+  },
+  {
+    src: "/projects/project-2.jpg",
+    alt: "Kitchen renovation electrical fit-out, contemporary home",
+    blurb:
+      "Electrical fit-out including feature pendant lighting, under-cabinet task lighting, and power provisions for a full run of kitchen appliances.",
+  },
+  {
+    src: "/projects/project-3.jpg",
+    alt: "Kitchen renovation electrical fit-out, hillside home",
+    blurb:
+      "Electrical fit-out including recessed downlighting and bench-top power points.",
+  },
+];
 
 export default function ProjectsPage() {
   return (
@@ -24,21 +44,22 @@ export default function ProjectsPage() {
 
       <section className="py-14 sm:py-20">
         <Container>
-          <div className="rounded-xl border-2 border-dashed border-wild-pink/40 bg-wild-pink/5 p-5 text-sm text-wild-ink/75">
-            This page is placeholder gallery slots — I don&apos;t have real
-            project photos, so I haven&apos;t invented any. Send through
-            photos and a line or two about each job (what it was, roughly
-            where) and I&apos;ll drop them in.
-          </div>
-
-          <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {placeholderSlots.map((n) => (
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {projects.map((p) => (
               <div
-                key={n}
-                className="flex aspect-[4/3] flex-col items-center justify-center gap-2 rounded-2xl border-2 border-dashed border-black/15 bg-wild-fog text-wild-ink/40"
+                key={p.src}
+                className="overflow-hidden rounded-2xl border border-black/10 bg-white shadow-sm"
               >
-                <span className="font-display text-3xl">+</span>
-                <span className="text-sm font-semibold">Project photo {n}</span>
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src={p.src}
+                    alt={p.alt}
+                    fill
+                    sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <p className="p-5 text-sm text-wild-ink/75">{p.blurb}</p>
               </div>
             ))}
           </div>
