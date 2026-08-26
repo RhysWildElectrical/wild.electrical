@@ -1,4 +1,4 @@
-import Link from "next/link";
+  import Link from "next/link";
 import Container from "@/components/Container";
 import ServiceCard from "@/components/ServiceCard";
 import { services, site } from "@/lib/site";
@@ -29,7 +29,7 @@ export default function Home() {
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/85">
             Wild Electrical covers homes, businesses, industrial sites and
-            solar — new builds, renovations, and everything that comes after.
+            solar: new builds, renovations, and everything that comes after.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -56,7 +56,7 @@ export default function Home() {
               What We Do
             </h2>
             <p className="mt-3 text-wild-ink/75">
-              From a single power point to a full solar farm fault-find — Wild
+              From a single power point to a full solar farm fault-find, Wild
               Electrical handles it.
             </p>
           </div>
@@ -87,9 +87,9 @@ export default function Home() {
               New Homes, Additions &amp; Renovations
             </h2>
             <p className="mt-4 text-wild-ink/75">
-              Whether it&apos;s a full electrical fit-out for a new build or
-              rewiring part of a renovation, Wild Electrical works alongside
-              builders and homeowners to get it done properly, on schedule.
+              From first and second fix on new home builds to extensions,
+              renovations and additions, Wild Electrical works alongside
+              builders and homeowners to get it done properly.
             </p>
             <Link
               href="/services#new-homes"
@@ -133,9 +133,9 @@ export default function Home() {
             </h2>
             <p className="mt-4 text-wild-ink/75">
               Beyond standard electrical work, Wild Electrical provides
-              maintenance and fault finding for large-scale solar farms and
-              utility-scale installations, plus instrumentation work for
-              process and control systems.
+              maintenance and fault finding for utility-scale solar farms,
+              plus installation and maintenance of process instrumentation
+              including weather station sensors.
             </p>
             <Link
               href="/services#utility-scale-solar"
@@ -175,7 +175,7 @@ export default function Home() {
               <p className="font-display text-4xl text-wild-sky">03</p>
               <h3 className="mt-2 font-display text-lg">Done Properly</h3>
               <p className="mt-2 text-sm text-white/75">
-                Compliant, tested work — not shortcuts.
+                Compliant, tested work, no shortcuts.
               </p>
             </div>
           </div>
