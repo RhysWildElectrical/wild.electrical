@@ -20,21 +20,34 @@ export default function AboutPage() {
       <section className="py-14 sm:py-20">
         <Container className="grid gap-10 lg:grid-cols-3">
           <div className="lg:col-span-2">
-            <h2 className="font-display text-2xl text-wild-purple">
-              [Placeholder — replace with real company story]
-            </h2>
-            <p className="mt-4 text-wild-ink/75">
-              This section needs real content from you: how Wild Electrical
-              started, who&apos;s behind it, and what sets the way you work
-              apart. I haven&apos;t invented a company history or made-up years
-              of experience here — that&apos;s not something I know, so it
-              needs to come from you.
+            <p className="text-wild-ink/75">
+              At Wild Electrical, we are passionate about delivering
+              efficient electrical projects with a commitment to
+              communication and high-quality work for your peace of mind.
             </p>
             <p className="mt-4 text-wild-ink/75">
-              Useful things to include: how long you&apos;ve been operating,
-              your electrical licence details, the areas you cover, and
-              anything that explains why a customer should call Wild
-              Electrical over another electrician.
+              Founded on the belief that everyone deserves honest,
+              transparent advice, professional workmanship and reliability.
+            </p>
+            <p className="mt-4 text-wild-ink/75">
+              Whether it is a small residential repair, alteration or
+              addition, a new home, commercial maintenance, solar, air
+              conditioning, instrumentation or utility scale solar farms, we
+              bring the same level of dedication and attention to detail.
+            </p>
+            <p className="mt-4 text-wild-ink/75">
+              The name <em>Wild Electrical</em> reflects our energy,
+              determination and our family. We embrace collaboration, we
+              stay up to date with industry standards and continuously
+              invest ourselves to provide the best possible service.
+            </p>
+            <p className="mt-4 text-wild-ink/75">
+              What sets us apart is our commitment to building lasting
+              relationships. We take pride in clear communication and
+              delivering a customer experience that exceeds expectations.
+            </p>
+            <p className="mt-6 font-display text-xl text-wild-pink">
+              GO WILD
             </p>
           </div>
           <div className="rounded-2xl bg-wild-fog p-6">
