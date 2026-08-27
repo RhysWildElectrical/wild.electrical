@@ -17,10 +17,7 @@ export default function Footer() {
         <div className="border-b border-white/10 bg-wild-purple">
           <Container className="py-16">
             <div className="mx-auto max-w-2xl text-center">
-              <h2 className="font-display text-3xl sm:text-4xl">Get a Quote</h2>
-              <p className="mt-3 text-white/80">
-                Tell us what you need and we&apos;ll get back to you.
-              </p>
+              <h2 className="font-display text-3xl sm:text-4xl">How can we help?</h2>
             </div>
             <div className="mx-auto mt-8 max-w-xl rounded-2xl bg-white p-6 text-wild-ink sm:p-8">
               <EnquiryForm compact />
