@@ -117,15 +117,15 @@ export const services: Service[] = [
       "Performance and compliance verification",
     ],
   },
-  {
+   {
     slug: "air-conditioning",
     title: "Air Conditioning",
     summary:
-      "Electrical work for air conditioning systems, wired in properly and ready to run.",
+      "Split system installations plus the electrical connections and circuits any air conditioning system needs.",
     bullets: [
-      "Electrical connections for air conditioning units",
-      "Circuit and switchboard provisioning for AC systems",
-      "Coordination with your AC installer or supplier",
+      "Split system air conditioner installation",
+      "Electrical connections and circuits for AC systems",
+      "Switchboard provisioning for AC units",
       "Fault finding on air conditioning electrical faults",
     ],
   },
