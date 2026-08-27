@@ -1,10 +1,10 @@
-  import Link from "next/link";
+import Link from "next/link";
 import Container from "@/components/Container";
 import ServiceCard from "@/components/ServiceCard";
 import { services, site } from "@/lib/site";
 
 const categories = services.filter((s) =>
-  ["residential", "commercial", "industrial", "solar"].includes(s.slug)
+  ["residential", "commercial", "industrial", "solar", "air-conditioning"].includes(s.slug)
 );
 
 export default function Home() {
@@ -22,14 +22,14 @@ export default function Home() {
         />
         <Container className="relative py-20 sm:py-28">
           <p className="font-display text-sm uppercase tracking-[0.2em] text-wild-sky">
-            Residential · Commercial · Industrial · Solar
+            Residential · Commercial · Industrial · Solar · Air Conditioning
           </p>
           <h1 className="mt-4 max-w-3xl font-display text-4xl leading-[1.05] sm:text-6xl">
-            Electrical work done right, from first fix to fault-finding.
+            Professional electrical work done right, from first fix to fault-finding.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-white/85">
-            Wild Electrical covers homes, businesses, industrial sites and
-            solar: new builds, renovations, and everything that comes after.
+            Wild Electrical covers homes, offices, industrial buildings and
+            solar: new builds, renovations, and everything in the middle.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -56,11 +56,11 @@ export default function Home() {
               What We Do
             </h2>
             <p className="mt-3 text-wild-ink/75">
-              From a single power point to a full solar farm fault-find, Wild
-              Electrical handles it.
+              From a single power point all the way to utility-scale solar
+              farm maintenance, Wild Electrical handles it.
             </p>
           </div>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {categories.map((s) => (
               <ServiceCard key={s.slug} service={s} href={`/services#${s.slug}`} />
             ))}
@@ -157,23 +157,20 @@ export default function Home() {
           </div>
           <div className="mt-10 grid gap-8 sm:grid-cols-3">
             <div className="text-center">
-              <p className="font-display text-4xl text-wild-sky">01</p>
-              <h3 className="mt-2 font-display text-lg">Straight Answers</h3>
+              <h3 className="font-display text-lg">Straight Answers</h3>
               <p className="mt-2 text-sm text-white/75">
                 Clear quotes and honest advice on what a job actually needs.
               </p>
             </div>
             <div className="text-center">
-              <p className="font-display text-4xl text-wild-sky">02</p>
-              <h3 className="mt-2 font-display text-lg">Every Scale</h3>
+              <h3 className="font-display text-lg">Every Scale</h3>
               <p className="mt-2 text-sm text-white/75">
                 From a single home to industrial sites and utility-scale
                 solar.
               </p>
             </div>
             <div className="text-center">
-              <p className="font-display text-4xl text-wild-sky">03</p>
-              <h3 className="mt-2 font-display text-lg">Done Properly</h3>
+              <h3 className="font-display text-lg">Done Properly</h3>
               <p className="mt-2 text-sm text-white/75">
                 Compliant, tested work, no shortcuts.
               </p>
