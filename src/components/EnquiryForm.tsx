@@ -1,7 +1,6 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { services } from "@/lib/site";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -29,7 +28,6 @@ export default function EnquiryForm({ compact = false }: { compact?: boolean }) 
       email: data.get("email"),
       phone: data.get("phone"),
       suburb: data.get("suburb"),
-      service: data.get("service"),
       message: data.get("message"),
     };
 
@@ -125,28 +123,6 @@ export default function EnquiryForm({ compact = false }: { compact?: boolean }) 
             className="w-full rounded-lg border border-black/15 bg-white px-4 py-2.5 text-wild-ink outline-none focus:border-wild-pink focus:ring-2 focus:ring-wild-pink/30"
           />
         </div>
-      </div>
-
-      <div>
-        <label htmlFor="service" className="mb-1 block text-sm font-semibold">
-          What do you need help with?
-        </label>
-        <select
-          id="service"
-          name="service"
-          defaultValue=""
-          className="w-full rounded-lg border border-black/15 bg-white px-4 py-2.5 text-wild-ink outline-none focus:border-wild-pink focus:ring-2 focus:ring-wild-pink/30"
-        >
-          <option value="" disabled>
-            Select a service
-          </option>
-          {services.map((s) => (
-            <option key={s.slug} value={s.title}>
-              {s.title}
-            </option>
-          ))}
-          <option value="Other">Other / not sure</option>
-        </select>
       </div>
 
       <div>
