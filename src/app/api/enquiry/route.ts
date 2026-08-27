@@ -29,7 +29,6 @@ export async function POST(req: NextRequest) {
     email?: unknown;
     phone?: unknown;
     suburb?: unknown;
-    service?: unknown;
     message?: unknown;
   };
 
@@ -43,7 +42,6 @@ export async function POST(req: NextRequest) {
   const email = String(body.email || "").trim();
   const phone = String(body.phone || "").trim();
   const suburb = String(body.suburb || "").trim();
-  const service = String(body.service || "").trim();
   const message = String(body.message || "").trim();
 
   if (!name || !email || !phone) {
@@ -64,7 +62,6 @@ export async function POST(req: NextRequest) {
     <p><strong>Email:</strong> ${escapeHtml(email)}</p>
     <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
     ${suburb ? `<p><strong>Suburb:</strong> ${escapeHtml(suburb)}</p>` : ""}
-    ${service ? `<p><strong>Service:</strong> ${escapeHtml(service)}</p>` : ""}
     ${message ? `<p><strong>Message:</strong><br/>${escapeHtml(message).replace(/\n/g, "<br/>")}</p>` : ""}
   `;
 
