@@ -118,8 +118,20 @@ export const services: Service[] = [
     ],
   },
   {
+    slug: "air-conditioning",
+    title: "Air Conditioning",
+    summary:
+      "Electrical work for air conditioning systems, wired in properly and ready to run.",
+    bullets: [
+      "Electrical connections for air conditioning units",
+      "Circuit and switchboard provisioning for AC systems",
+      "Coordination with your AC installer or supplier",
+      "Fault finding on air conditioning electrical faults",
+    ],
+  },
+  {
     slug: "utility-scale-solar",
-    title: "Solar Farm & Utility-Scale",
+    title: "Utility Scale Solar Farms",
     summary:
       "Maintenance and fault finding for utility scale solar farm installations.",
     bullets: [
