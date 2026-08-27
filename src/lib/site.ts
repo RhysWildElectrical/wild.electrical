@@ -10,7 +10,7 @@ export const site = {
   serviceArea: "South Australia",
   address: "Adelaide Hills",
   abn: "98 749 910 248",
-  licence: "PLACEHOLDER: add electrical licence number",
+  licence: "PGE228784",
   hours: "24/7",
   social: {
     facebook: "",
