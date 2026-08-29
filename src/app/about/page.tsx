@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Container from "@/components/Container";
 import { site } from "@/lib/site";
 
@@ -39,7 +38,7 @@ export default function AboutPage() {
               The name <em>Wild Electrical</em> reflects our energy,
               determination and our family. We embrace collaboration, we
               stay up to date with industry standards and continuously
-              invest ourselves to provide the best possible service.
+              invest in ourselves to provide the best possible service.
             </p>
             <p className="mt-4 text-wild-ink/75">
               What sets us apart is our commitment to building lasting
@@ -72,20 +71,6 @@ export default function AboutPage() {
                 <dd>{site.hours}</dd>
               </div>
             </dl>
-          </div>
-        </Container>
-
-        <Container className="mt-16">
-          <div className="rounded-2xl bg-wild-fog p-8 text-center">
-            <h2 className="font-display text-2xl text-wild-purple">
-              Got a job in mind?
-            </h2>
-            <Link
-              href="/contact"
-              className="mt-5 inline-block rounded-full bg-wild-pink px-7 py-3 text-sm font-bold uppercase tracking-wide text-white transition hover:brightness-110"
-            >
-              Get in Touch
-            </Link>
           </div>
         </Container>
       </section>
