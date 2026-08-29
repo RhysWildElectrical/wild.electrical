@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Container from "@/components/Container";
 import { services } from "@/lib/site";
 
@@ -65,21 +64,6 @@ export default function ServicesPage() {
                 </div>
               </div>
             ))}
-          </div>
-
-          <div className="mt-16 rounded-2xl bg-wild-fog p-8 text-center">
-            <h2 className="font-display text-2xl text-wild-purple">
-              How can we help?
-            </h2>
-            <p className="mt-2 text-wild-ink/75">
-              Send us the details and we&apos;ll point you in the right direction.
-            </p>
-            <Link
-              href="/contact"
-              className="mt-5 inline-block rounded-full bg-wild-pink px-7 py-3 text-sm font-bold uppercase tracking-wide text-white transition hover:brightness-110"
-            >
-              Get in Touch
-            </Link>
           </div>
         </Container>
       </section>
