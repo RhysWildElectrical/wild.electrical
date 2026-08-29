@@ -8,7 +8,7 @@ export const site = {
   phoneHref: "tel:+61411608100",
   email: "rhys@wildelectrical.au",
   serviceArea: "South Australia",
-  address: "Adelaide Hills",
+  address: "South Australia",
   abn: "98 749 910 248",
   licence: "PGE228784",
   hours: "24/7",
@@ -74,7 +74,7 @@ export const services: Service[] = [
     slug: "commercial",
     title: "Commercial",
     summary:
-      "Electrical installation and maintenance for offices, retail, commercial and cafes.",
+      "Electrical installation and maintenance for offices, retail and cafes.",
     bullets: [
       "Office and retail install and maintenance",
       "Switchboard and distribution upgrades",
@@ -101,7 +101,7 @@ export const services: Service[] = [
       "Installation and maintenance of process instrumentation including weather station sensors.",
     bullets: [
       "Sensor installations",
-      "Weather station installation and fault finding",
+      "Weather station installation",
       "Control wiring",
       "Fault finding",
     ],
@@ -117,7 +117,7 @@ export const services: Service[] = [
       "Performance and compliance verification",
     ],
   },
-   {
+  {
     slug: "air-conditioning",
     title: "Air Conditioning",
     summary:
