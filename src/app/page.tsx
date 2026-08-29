@@ -21,7 +21,7 @@ export default function Home() {
           className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-wild-sky/20 blur-3xl"
         />
         <Container className="relative py-20 sm:py-28">
-          <p className="font-display text-sm uppercase tracking-[0.2em] text-wild-sky">
+          <p className="font-display text-sm uppercase tracking-[0.2em] text-wild-sky text-balance">
             Residential · Commercial · Industrial · Solar · Air Conditioning
           </p>
           <h1 className="mt-4 max-w-3xl font-display text-4xl leading-[1.05] sm:text-6xl">
