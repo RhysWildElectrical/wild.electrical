@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import Container from "@/components/Container";
 
 export const metadata: Metadata = {
@@ -62,15 +61,6 @@ export default function ProjectsPage() {
                 <p className="p-5 text-sm text-wild-ink/75">{p.blurb}</p>
               </div>
             ))}
-          </div>
-
-          <div className="mt-16 text-center">
-            <Link
-              href="/contact"
-              className="inline-block rounded-full bg-wild-pink px-7 py-3 text-sm font-bold uppercase tracking-wide text-white transition hover:brightness-110"
-            >
-              Start Your Project
-            </Link>
           </div>
         </Container>
       </section>
